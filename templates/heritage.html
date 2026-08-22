@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/heritage.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>🏛 Indian Classical Music Heritage</h1>
+
+    <p class="subtitle">
+        Explore India's timeless musical traditions and preserve our cultural heritage.
+    </p>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/heritage.jpg') }}" alt="Heritage">
+    </div>
+
+    <div class="content">
+
+        <h2>About Indian Classical Music</h2>
+
+        <p>
+            Indian Classical Music is one of the world's oldest musical traditions.
+            It is based on ragas and has been passed from generation to generation
+            through the Guru-Shishya Parampara.
+        </p>
+
+    </div>
+
+   <a href="/" class="back-btn">⬅ Back to Home</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background:#F8F5F2;
+}
+
+.thankyou-page{
+    min-height:calc(100vh - 180px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 20px 80px;
+}
+
+.card {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .1);
+    width: 600px;
+}
+
+h1 {
+    color: #138808;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: #FF9933;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}

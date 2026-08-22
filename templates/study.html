@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/study.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="study-container">
+
+    <h1>📚 Study Mode</h1>
+
+    <p class="subtitle">
+        Focus better with Indian Classical Music specially recommended for studying.
+    </p>
+
+    <div class="study-card">
+
+        <h2>🎵 Recommended Study Raga</h2>
+
+        <h3>Raag Hamsadhwani</h3>
+
+        <p>
+            Calm instrumental music that helps improve concentration and keeps
+            the mind relaxed while studying.
+        </p>
+
+
+
+    </div>
+    <div class="timer">
+
+        <h2 id="time">25:00</h2>
+
+        <div class="timer-buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+    </div>
+    <div class="tips-card">
+
+        <h2>💡 Today's Study Tip</h2>
+
+        <p id="studyTip"></p>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/study.js') }}"></script>
+{% endblock %}

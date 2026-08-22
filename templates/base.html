@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RaagaSetu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    {% block extra_css %}{% endblock %}
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🎵 RaagaSetu
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <ul id="nav-links">
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/learning">Learning</a></li>
+
+            <li><a href="/listening">Listening</a></li>
+
+            <li><a href="/study">Study</a></li>
+
+            <li><a href="/heritage">Heritage</a></li>
+
+            <li><a href="/survey">Survey</a></li>
+
+            <li><a href="/about">About</a></li>
+
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">
+            🌙
+        </button>
+
+    </nav>
+    <!-- ================= CHATBOT ================= -->
+
+    <div class="chatbot">
+
+        <button id="chat-btn">🤖</button>
+
+        <div class="chat-box" id="chat-box">
+
+            <div class="chat-header">
+                🎵 RaagaSetu AI
+            </div>
+
+            <div class="chat-body" id="chat-body">
+
+                <div class="bot-msg">
+                    Hello 👋<br>
+                    Ask me anything about Indian Classical Music.
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input type="text" id="user-input" placeholder="Ask anything...">
+
+                <button id="send-btn">
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🎵 RaagaSetu</h2>
+
+            <p>
+                Bridging India's timeless musical heritage with modern technology.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="/">Home</a>
+                <a href="/learning">Learning</a>
+                <a href="/listening">Listening</a>
+                <a href="/study">Study</a>
+                <a href="/heritage">Heritage</a>
+                <a href="/survey">Survey</a>
+                <a href="/about">About</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 RaagaSetu | Made with ❤️ by Team RaagaSetu
+            </p>
+
+        </div>
+
+
+    </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+    {% block extra_js %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

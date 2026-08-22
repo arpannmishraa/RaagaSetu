@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F8F5F2;
+}
+
+.about-page{
+    width:90%;
+    max-width:1200px;
+    margin:120px auto;
+    text-align:center;
+}
+
+.about-page h1{
+    font-size:52px;
+    color:#1B2A41;
+    margin-bottom:25px;
+}
+
+.intro{
+    max-width:850px;
+    margin:auto;
+    color:#555;
+    line-height:32px;
+    font-size:19px;
+}
+
+.cards{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:left;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.box h2{
+    color:#FF9933;
+    margin-bottom:20px;
+}
+
+.box p,
+.box li{
+    color:#555;
+    line-height:30px;
+}
+
+.box ul{
+    padding-left:20px;
+}

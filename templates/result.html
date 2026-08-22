@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="result-page">
+
+    <div class="card">
+
+        <h1>🎵 Recommended Raga</h1>
+
+        <h2>{{ raga }}</h2>
+        <div class="raga-image">
+            <img src="{{ url_for('static', filename='images/yaman.jpg') }}" alt="Raga">
+        </div>
+
+        <p>{{ reason }}</p>
+        <div class="info">
+
+            <div>
+                <strong>🕒 Time</strong>
+                <p>Evening (6 PM - 9 PM)</p>
+            </div>
+
+            <div>
+                <strong>😊 Mood</strong>
+                <p>Peace • Calm • Devotion</p>
+            </div>
+
+            <div>
+                <strong>🎼 Thaat</strong>
+                <p>Kalyan</p>
+            </div>
+
+        </div>
+        <a class="listen-btn" href="https://www.youtube.com/results?search_query={{ raga }}" target="_blank">
+            ▶ Listen on YouTube
+        </a>
+
+        <a href="/listening">Try Again</a>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/survey.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>📝 RaagaSetu Survey</h1>
+
+    <p>Help us improve your musical learning experience.</p>
+
+    <form action="/survey" method="POST">
+
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+
+        <select name="rating">
+
+            <option>⭐⭐⭐⭐⭐ Excellent</option>
+
+            <option>⭐⭐⭐⭐ Good</option>
+
+            <option>⭐⭐⭐ Average</option>
+
+            <option>⭐⭐ Poor</option>
+
+        </select>
+
+        <textarea
+            name="feedback"
+            placeholder="Write your feedback..."
+            rows="5">
+        </textarea>
+
+        <button type="submit">
+            Submit Feedback
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,328 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <h1>
+            Discover the Soul of
+            <span>Indian Classical Music</span>
+        </h1>
+
+        <p>
+            RaagaSetu bridges India's timeless musical heritage with modern
+            technology, making learning, listening and preserving ragas
+            simple for everyone.
+        </p>
+
+        <div class="buttons">
+            <a href="/learning" class="btn1">Start Learning</a>
+
+            <a href="/listening" class="btn2">Explore Ragas</a>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Hero Image">
+
+    </div>
+
+</section>
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="section-title">
+        <h2>About RaagaSetu</h2>
+        <p>
+            Preserving India's timeless musical heritage through
+            modern technology and beginner-friendly learning.
+        </p>
+    </div>
+
+    <div class="about-cards">
+
+        <div class="card">
+            <i class="fa-solid fa-book-open"></i>
+            <h3>Learn</h3>
+            <p>
+                Step-by-step learning modules designed for beginners.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Explore</h3>
+            <p>
+                Discover ragas with explanations based on time,
+                mood and purpose.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-landmark"></i>
+            <h3>Preserve</h3>
+            <p>
+                Protect India's musical heritage for future generations.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= WHY RAAGASETU ================= -->
+
+<section class="why">
+
+    <div class="why-left">
+
+        <h2>Why RaagaSetu?</h2>
+
+        <p class="intro">
+            Indian Classical Music is one of India's richest knowledge systems,
+            but many young people struggle to learn and understand it.
+        </p>
+
+        <div class="point">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div>
+                <h3>The Problem</h3>
+                <p>
+                    Knowledge is scattered across books, videos and the
+                    traditional guru-shishya system, making it difficult
+                    for beginners to start.
+                </p>
+            </div>
+        </div>
+
+        <div class="point">
+            <i class="fa-solid fa-lightbulb"></i>
+            <div>
+                <h3>Our Solution</h3>
+                <p>
+                    RaagaSetu provides structured learning,
+                    explainable recommendations and heritage preservation
+                    through a modern digital platform.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="why-right">
+
+        <div class="why-box">
+            <h3>🌿 Sustainability Goal</h3>
+
+            <p>
+                Preserving India's Intangible Cultural Heritage by making
+                Indian Classical Music accessible to the next generation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+        <h2>Explore RaagaSetu</h2>
+        <p>
+            Four intelligent modules designed to make Indian Classical Music
+            simple, explainable and engaging.
+        </p>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Learning Mode</h3>
+            <p>
+                Learn swaras, alankars, ragas and guided practice step by step.
+            </p>
+            <a href="/learning">Explore →</a>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-music"></i>
+            <h3>Listening Mode</h3>
+            <p>
+                Discover ragas based on mood, time and purpose with explanations.
+            </p>
+            <a href="/listening">Explore →</a>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-book"></i>
+            <h3>Study Mode</h3>
+            <p>
+                Find peaceful instrumental ragas that help improve focus.
+            </p>
+            <a href="/study">Explore →</a>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-landmark"></i>
+            <h3>Heritage Mode</h3>
+            <p>
+                Explore lesser-known ragas and preserve India's musical heritage.
+            </p>
+            <a href="/heritage">Explore →</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= RAGA OF THE WEEK ================= -->
+
+<section class="raga-week">
+
+    <div class="section-title">
+
+        <h2>🎵 Raga of the Week</h2>
+
+        <p>
+            Discover a beautiful Indian Classical Raga every week with its
+            history, mood and ideal listening time.
+        </p>
+
+    </div>
+
+    <div class="raga-card">
+
+        <div class="raga-left">
+
+            <h3>Raag Yaman</h3>
+
+            <p>
+                One of the most beautiful evening ragas, Raag Yaman is often
+                the first raga taught to beginners because of its peaceful and
+                devotional nature.
+            </p>
+
+            <div class="raga-info">
+
+                <div>
+                    <strong>🕒 Time</strong>
+                    <span>6 PM – 9 PM</span>
+                </div>
+
+                <div>
+                    <strong>😊 Mood</strong>
+                    <span>Peace • Devotion • Calm</span>
+                </div>
+
+                <div>
+                    <strong>🎼 Thaat</strong>
+                    <span>Kalyan</span>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn1">Listen Now</a>
+
+        </div>
+
+        <div class="raga-right">
+
+            <img src="{{ url_for('static', filename='images/yaman.jpg') }}" alt="Raag Yaman">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED ARTISTS ================= -->
+
+<section class="artists">
+
+    <div class="section-title">
+        <h2>🎼 Legendary Artists</h2>
+
+        <p>
+            Discover the maestros who shaped Indian Classical Music and inspired generations.
+        </p>
+    </div>
+
+    <div class="artist-grid">
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='images/ravishankar.jpg') }}" alt="Ravi Shankar">
+
+            <h3>Pandit Ravi Shankar</h3>
+
+            <span>Sitar Maestro</span>
+        </div>
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='images/bhimsen.jpg') }}" alt="Bhimsen Joshi">
+
+            <h3>Pandit Bhimsen Joshi</h3>
+
+            <span>Hindustani Vocal</span>
+        </div>
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='images/mssubbulakshmi.jpg') }}" alt="M.S. Subbulakshmi">
+
+            <h3>M. S. Subbulakshmi</h3>
+
+            <span>Carnatic Vocal</span>
+        </div>
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='images/zakir.jpg') }}" alt="Zakir Hussain">
+
+            <h3>Ustad Zakir Hussain</h3>
+
+            <span>Tabla Maestro</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= RESEARCH INSIGHTS ================= -->
+
+<section class="research">
+
+    <div class="section-title">
+        <h2>📊 Research Insights</h2>
+        <p>
+            Survey findings that inspired the design of RaagaSetu.
+        </p>
+    </div>
+
+    <div class="research-grid">
+
+        <div class="research-card">
+            <h3>68%</h3>
+            <p>Students find Indian Classical Music difficult to understand.</p>
+        </div>
+
+        <div class="research-card">
+            <h3>22%</h3>
+            <p>Students don't know where to begin learning.</p>
+        </div>
+
+        <div class="research-card">
+            <h3>10%</h3>
+            <p>Students rarely discover classical music through digital platforms.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

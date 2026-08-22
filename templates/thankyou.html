@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/thankyou.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="thankyou-page">
+
+<div class="card">
+
+    <h1>🎉 Thank You!</h1>
+
+    <p>
+        Thank you <b>{{ name }}</b> for your valuable feedback.
+    </p>
+
+    <p>
+        Your Rating: <b>{{ rating }}</b>
+    </p>
+
+    <a href="/">Back to Home</a>
+
+</div>
+</section>
+
+{% endblock %}
